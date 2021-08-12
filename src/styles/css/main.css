@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'hoodson_script_free_demoRg';
+    src: url('../fonts/hoodson_free_font_-webfont.woff2') format('woff2'),
+         url('../fonts/hoodson_free_font_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'stay_classy_sldtregular';
+    src: url('../fonts/stay_classy_sldt-webfont.woff2') format('woff2'),
+         url('../fonts/stay_classy_sldt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+
+    font-family: 'caligna_demoregular';
+    src: url('../fonts/calignademo-webfont.woff2') format('woff2'),
+         url('../fonts/calignademo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+li,.info
+{
+    font-family: 'caligna_demoregular';
+    font-size: 20px;			
+}
+.max-width
+{
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: auto;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.navbar
+{
+    position: fixed;
+    background: Black;
+    width:100%;
+    z-index: 999;
+}
+.navbar .logo a
+{
+    color:white;
+    font-size: 55px;
+    font-weight: 600;
+}
+.navbar .logo span
+{
+    color:rgb(100,88,255);
+}
+.navbar .menu li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+.navbar .menu li a
+{
+    color: white;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.navbar .menu li a:hover
+{
+    color: #ae0000;
+}
+
+.navbar .max-width 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home
+{
+    display: flex;
+    background: linear-gradient(to right,#ae0000,#030202);
+    height: 120vh;
+    color: white;
+    min-height: 500px;
+}
+.home .max-width
+{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text
+{
+    font-size: 27px;
+}
+.home .home-content .name
+{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;;
+}
+.home .home-content .summary
+{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .summary span
+{
+    font-weight: 600;
+    color: DimGray;
+}
+.home img
+{
+    width: 3à0px;
+    height: 300px;
+    border-radius: 20%;
+    padding-bottom: 10px;
+}
+section
+{
+    padding: 100px 0;
+}
+section .title
+{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+h2
+{
+    font-family: 'stay_classy_sldtregular';
+}
+section .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translate(-50%);
+}
+section .title::after
+{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color:blue;
+    padding:5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.about .title::after
+{
+    content: "****";
+    font-family: 'caligna_demoregular';
+}
+.effect .effect-content,.prev .prev-content,.traitement .traitement-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content
+{
+    display: flex;
+
+}
+.about .about-content .profil
+{
+    width: 50%;
+}
+.about .about-content .profil img
+{
+    width: 460px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right
+{
+    width: 40%;
+}
+.about .about-content .right .text
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.about .about-content .right .malagasy::before
+{
+    width: 100%;
+}
+.about .about-content .right .french::before
+{
+    width: 100%;
+}
+.about .about-content .right .english::before
+{
+    width: 85%;
+}
+
+.effect
+{
+    background:url(../../assets/images/co2.jpg);
+    background-size:contain;
+    color:white;
+}
+.effect .title::before
+{
+    background: white;
+}
+.effect .title::after
+{
+    background:peru;
+    content: "****";
+    font-family: 'caligna_demoregular';
+}
+.effect .effect-content .card,.about .about-content .card
+{
+    width: calc(33% - 30px);
+    background:white;
+    text-align: center;
+    border-radius: 6px;
+    padding:20px 25px;
+    margin-bottom:20px;
+    padding: 50px;
+    cursor: pointer;
+    font-family: 'caligna_demoregular'; 
+    color: black;
+}
+.about .about-content .card
+{
+    background:url(../../assets/images/darkdark.png);
+    background-size: cover;
+    margin: 10px;
+    width: 300px;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.effect .effect-content .card:hover
+{
+    background: #ae0000;
+}
+
+.prev
+{
+    background: white;
+    color: black;
+}
+.prev .title::before
+{
+   background: white;
+}
+.prev .title::after
+{
+    content: "****";
+    background: black;
+    font-family: 'caligna_demoregular';
+}
+.prev .prev-content .column
+{
+    width: calc(50% - 30px);
+}
+.prev .prev-content li
+{
+    text-align: center;
+    align-self: center;
+    list-style-type: none;
+}
+.prev .prev-content .left .text
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.prev .prev-content .left .text p
+{
+    text-align: justify;
+}
+.prev .prev-content .right .bars
+{
+    margin-bottom: 15px;
+}
+.prev .prev-content .right .info,.about .about-content .right .info
+{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.prev .prev-content .right span,.about .about-content .right span
+{
+    font-weight: 500;
+    font-size: 18px;
+}
+.prev .prev-content .right .line,.about .about-content .right .line
+{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.prev .prev-content .right .line::before,.about .about-content .right .line::before
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: blue;
+}
+.prev .prev-content .right .html::before
+{
+    width: 90%;
+}
+.prev .prev-content .right .java::before
+{
+    width: 90%;
+}
+.prev .prev-content .right .csharp::before
+{
+    width: 90%;
+}
+.prev .prev-content .right .python::before
+{
+    width: 90%;
+}
+.prev .prev-content .right .elec::before
+{
+    width: 80%;
+}
+
+.traitement
+{
+    background: url('../../assets/images/co5.jpg') no-repeat;
+    background-size: cover;
+}
+
+.traitement .traitement-content .column
+{
+    width: calc(50% - 30px);
+}
+.traitement .traitement-content .text
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.traitement .traitement-content .left p
+{
+    text-align: justify;
+}
+.traitement .traitement-content .left .img
+{
+    margin: 10px 0;
+}
+.traitement .traitement-content .row
+{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.traitement .traitement-content .row .info
+{
+    margin-left: 30px;
+}
+.traitement .traitement-content .info .head
+{
+    font-weight: 500;
+}
+.traitement .traitement-content .info .sub-title
+{
+    color: #333;
+}
+#mail
+{
+    width: 40px;
+    height: 40px;
+}
+.traitement
+{
+    color: white;
+}
+footer
+{
+    background: Black;
+    padding: 20px 23px;
+    color: white;
+    text-align: center;
+}
