@@ -18,7 +18,7 @@ datas.data.map(d=>{
 const code= datas.code
 const totalCase= datas.data.map(dt=>dt.c).reduce((acc,cur)=>acc+=cur)
 const totalDeath= datas.data.map(dt=>dt.d).reduce((acc,cur)=>acc+=cur)
-const totalRemaining= datas.data.map(dt=>dt.d).reduce((acc,cur)=>acc+=cur)
+const totalRemaining= datas.data.map(dt=>dt.r).reduce((acc,cur)=>acc+=cur)
 const date= datas.data[0].date +' - '+ datas.data[datas.data.length-1].date
 export function Stats (){
   const [flag, setFlag] = useState<string>();
